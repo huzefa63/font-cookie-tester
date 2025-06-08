@@ -3,6 +3,7 @@ import Fetch from "./_compo/Fetch";
 
 export default async  function Home() {
   try{
+    console.log('fetching started');
     const res = await fetch('https://back-tester-cookie.onrender.com/cookie',{credentials:'include'});
     const data = res.json();
     console.log(data);
